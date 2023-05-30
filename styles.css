@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #111827;
+    color: #e5e7eb;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.timer-container, .home-container, .away-container {
+    text-align: center;
+}

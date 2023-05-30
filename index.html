@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="home-container">
+            <h2>HOME</h2>
+            <h2 id="home-score">0</h2>
+            <div>
+                <button id="one-point-btn" onclick="homeOnePoint()">+1</button>
+                <button id="two-points-btn" onclick="homeTwoPoints()">+2</button>
+                <button id="three-points-btn" onclick="homeThreePoints()">+3</button>
+            </div>
+        </div>
+        <div class="timer-container">
+            <h2 id="timer">24.0</h2>
+            <button id="startPauseBtn" onclick="startPauseTimer()">Start</button>
+            <button id="restartBtn" onclick="restartTimer()">Restart</button>
+        </div>
+        <div class="away-container">
+            <h2>AWAY</h2>
+            <h2 id="away-score">0</h2>
+            <div>
+                <button id="one-point-btn" onclick="awayOnePoint()">+1</button>
+                <button id="two-points-btn" onclick="awayTwoPoints()">+2</button>
+                <button id="three-points-btn" onclick="awayThreePoints()">+3</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>

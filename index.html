@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basketball Timer</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <div class="container">
         <div class="home-container">
-            <h2>HOME</h2>
+            <h1>HOME</h1>
             <h2 id="home-score">0</h2>
             <div>
                 <button id="one-point-btn" onclick="homeOnePoint()">+1</button>
@@ -21,10 +21,11 @@
         <div class="timer-container">
             <h2 id="timer">24.0</h2>
             <button id="startPauseBtn" onclick="startPauseTimer()">Start</button>
-            <button id="restartBtn" onclick="restartTimer()">Restart</button>
+            <button id="restartBtn" onclick="restartTimer()">Reset</button>
+            <button id="resetBtn" onclick="resetGame()">New Game</button>
         </div>
         <div class="away-container">
-            <h2>AWAY</h2>
+            <h1>AWAY</h1>
             <h2 id="away-score">0</h2>
             <div>
                 <button id="one-point-btn" onclick="awayOnePoint()">+1</button>

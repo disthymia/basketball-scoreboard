@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Cursed Timer;
+    src: url(/programming/scrimba/Basketball\ Timer\ App/CursedTimerUlil-Aznm.ttf);
+}
+
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -13,8 +18,8 @@ h1 {
 }
 
 h2 {
-    font-size: 4vh;
-    /* margin: 40px auto; */
+    font-size: 7vh;
+    margin: 0;
 }
 
 button {
@@ -23,7 +28,8 @@ button {
 
 .container {
     display: flex;
-    /* align-items: center; */
+    justify-content: space-evenly;
+    align-items: center;
     max-width: 600px;
     width: 85%;
     border: #9ca3af 2px solid;
@@ -34,14 +40,63 @@ button {
 }
 
 .timer-container, .home-container, .away-container {
+    justify-content: center;
     text-align: center;
+}
+
+.home-container, .away-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 250px;
+}
+
+.timer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 200px;
+    height: 125px;
 }
 
 #startPauseBtn, #restartBtn {
     width: 80px;
   }
 
+.score-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#one-point-btn, #two-points-btn, #three-points-btn {
+    flex: 0 1 45px;
+}
+
 #resetBtn {
     width: 165px;
     margin-top: 5px;
+}
+
+.digital-font {
+    font-family: Cursed Timer;
+    font-weight: 100;
+}
+
+#timer {
+    color: #ff1d1d;
+}
+
+.score-container {
+    background-color: grey;
+    width: 85px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: right;
+    border: #e5e7eb 3px solid;
+    border-radius: 10px;
 }

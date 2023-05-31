@@ -9,28 +9,37 @@
 </head>
 <body>
     <div class="container">
+<!------------ HOME ------------>
         <div class="home-container">
             <h1>HOME</h1>
-            <h2 id="home-score">0</h2>
+            <div id="home-score-container" class="score-container">
+                <h2 id="home-score" class="digital-font">0</h2>
+            </div>
             <div>
-                <button id="one-point-btn" onclick="homeOnePoint()">+1</button>
-                <button id="two-points-btn" onclick="homeTwoPoints()">+2</button>
-                <button id="three-points-btn" onclick="homeThreePoints()">+3</button>
+                <button id="one-point-btn" class="digital-font" onclick="homeOnePoint()">+1</button>
+                <button id="two-points-btn" class="digital-font" onclick="homeTwoPoints()">+2</button>
+                <button id="three-points-btn" class="digital-font" onclick="homeThreePoints()">+3</button>
             </div>
         </div>
+ <!------------ TIMER ------------>
         <div class="timer-container">
-            <h2 id="timer">24.0</h2>
-            <button id="startPauseBtn" onclick="startPauseTimer()">Start</button>
-            <button id="restartBtn" onclick="restartTimer()">Reset</button>
+            <h2 id="timer" class="digital-font">24.0</h2>
+            <div id="startResetBtns">
+                <button id="startPauseBtn" onclick="startPauseTimer()">Start</button>
+                <button id="restartBtn" onclick="restartTimer()">Reset</button>
+            </div>
             <button id="resetBtn" onclick="resetGame()">New Game</button>
         </div>
+<!------------ AWAY ------------>
         <div class="away-container">
             <h1>AWAY</h1>
-            <h2 id="away-score">0</h2>
+            <div id="away-score-container" class="score-container">
+                <h2 id="away-score" class="digital-font">0</h2>
+            </div> 
             <div>
-                <button id="one-point-btn" onclick="awayOnePoint()">+1</button>
-                <button id="two-points-btn" onclick="awayTwoPoints()">+2</button>
-                <button id="three-points-btn" onclick="awayThreePoints()">+3</button>
+                <button id="one-point-btn" class="digital-font" onclick="awayOnePoint()">+1</button>
+                <button id="two-points-btn" class="digital-font" onclick="awayTwoPoints()">+2</button>
+                <button id="three-points-btn" class="digital-font" onclick="awayThreePoints()">+3</button>
             </div>
         </div>
     </div>

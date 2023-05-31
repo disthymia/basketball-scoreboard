@@ -1,5 +1,7 @@
 let homeScoreEl = document.getElementById("home-score");
 let awayScoreEl = document.getElementById("away-score");
+let homeScoreContainerEl = document.getElementById("home-score-container");
+let awayScoreContainerEl = document.getElementById("away-score-container");
 let homeScore = 0;
 let awayScore = 0;
 
@@ -139,26 +141,20 @@ function highlightHigherScore() {
     const awayScoreValue = parseInt(awayScoreEl.textContent);
 
     if (homeScoreValue > awayScoreValue) {
-        homeScoreEl.style.backgroundColor = 'rgba(10,14,23,80%)';
-        homeScoreEl.style.borderRadius = '10px';
-        homeScoreEl.style.padding = '5px 0';
-        homeScoreEl.style.marginBottom = '20px';
-        awayScoreEl.style.backgroundColor = '';
+        homeScoreContainerEl.style.backgroundColor = 'rgba(10,14,23,80%)';
+        awayScoreContainerEl.style.backgroundColor = '';
     } else if (awayScoreValue > homeScoreValue) {
-        awayScoreEl.style.backgroundColor = 'rgba(10, 14, 23, 90)';
-        awayScoreEl.style.borderRadius = '10px'
-        awayScoreEl.style.padding = '5px 0';
-        awayScoreEl.style.marginBottom = '20px';
-        homeScoreEl.style.backgroundColor = '';
+        awayScoreContainerEl.style.backgroundColor = 'rgba(10,14,23,80%)';
+        homeScoreContainerEl.style.backgroundColor = '';
     } else {
-        homeScoreEl.style.backgroundColor = '';
-        awayScoreEl.style.backgroundColor = '';
+        homeScoreContainerEl.style.backgroundColor = '';
+        awayScoreContainerEl.style.backgroundColor = '';
     }
 }
 
 // Event listeners for score changes
-homeScoreEl.addEventListener('DOMSubtreeModified', highlightHigherScore);
-awayScoreEl.addEventListener('DOMSubtreeModified', highlightHigherScore);
+homeScoreContainerEl.addEventListener('DOMSubtreeModified', highlightHigherScore);
+awayScoreContainerEl.addEventListener('DOMSubtreeModified', highlightHigherScore);
 
 // Event listener for spacebar key press
 document.addEventListener('keydown', function (event) {
